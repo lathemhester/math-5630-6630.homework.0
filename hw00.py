@@ -45,5 +45,5 @@ def p3():
     This function should have a run time about 1 second.
     :return: no returns
     """
-    
+    time
     pass # add your code here
