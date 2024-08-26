@@ -17,9 +17,17 @@ def p1(m):
     """
     if m < 0:
         return None
+    elif m == 0:
+        return 0
+    elif m == 1 or m == 2:
+        return 1
     else:
-        pass # add your code here
-    
+        arr = [0, 1, 1]
+        for i in range(m - 2):  # Loop runs (m-2) times to get up to the m-th term
+            nextNum = np.sum(arr)
+            arr.append(nextNum)
+            arr.pop(0)
+        return np.sum(arr)
 
 def p2(A):
     """
